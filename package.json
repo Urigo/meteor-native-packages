@@ -1,7 +1,7 @@
 {
   "name": "meteor-native-packages",
   "version": "0.0.1",
-  "description": "A bundle of all meteor's core modules, suitable for a native environment",
+  "description": "A bundle of all Meteor's core modules, suitable for a native environment",
   "author": "Eytan Manor",
   "repository": {
     "type": "git",

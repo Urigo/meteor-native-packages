@@ -3,7 +3,7 @@
 Package.describe({
   name: 'meteor-native',
   summary: "Core Meteor environment",
-  version: '0.0.1'
+  version: '1.6.1'
 });
 
 Package.registerBuildPlugin({
