@@ -1,0 +1,22 @@
+{
+  "name": "meteor-native-packages",
+  "version": "0.0.1",
+  "description": "A bundle of all meteor's core modules, suitable for a native environment",
+  "author": "Eytan Manor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Urigo/meteor-native-packages.git"
+  },
+  "bin": {
+    "meteor-native": "cli"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "execa": "^0.6.0",
+    "find-root": "^1.0.0"
+  },
+  "keywords": [
+    "meteor",
+    "native"
+  ]
+}

@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+var Program = require("commander");
+var Linker = require("./linker");
+var Pack = require("./package.json");
+
+var optionIndention = Array(41).join(" ");
+var titleIndention = Array(3).join(" ");
+
+Program
+  .version(Pack.version)
+  .description(Pack.description);
+
+Program
+  .command("link [packages-dir]")
+  .description("Creates symbolic links for all native packages")
+
+  .action(function (packsDir, options) {
+    Linker.link(packsDir);
+  });
+
+Program.on("--help", function (){
+  console.log(titleIndention + "For more information, see: " + Pack.repository.url);
+  console.log();
+});
+
+Program.parse(process.argv);
