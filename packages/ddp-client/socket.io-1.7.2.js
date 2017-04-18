@@ -1,6 +1,4 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-  root["SocketIO"] = factory();
-})(this, function () {
+io = (function () {
   return function (modules) {
     var installedModules = {};
 
@@ -5428,5 +5426,4 @@
       this.jitter = jitter;
     };
   }]);
-});
-;
+})();

@@ -2,7 +2,7 @@
 
 This is a bundle of modified core Meteor packages which will make Meteor suitable for a native environment. This project originally created due to the need of running Meteor with React-Native. This shouldn't be a permanent solution but rather a temporary one, until Meteor will decide to make it official by merging these packages into their master branch. Hopefully this is gonna happen asap.
 
-## Quick start
+### Quick start
 
 First, add the following script in your `package.json` file, and replace `{{packages-dir}}` with your desired output path:
 
@@ -30,6 +30,6 @@ Packages have been successfully linked at:
 
 That's it! Your native Meteor packages are linked and ready to use.
 
-## LICENSE
+### License
 
 MIT

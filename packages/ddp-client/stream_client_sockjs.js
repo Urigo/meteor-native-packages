@@ -165,7 +165,7 @@ _.extend(LivedataTest.ClientStream.prototype, {
       path: "/" + sockjsUrl.pop()
     }, self.options._sockjsOptions);
 
-    self.socket = SocketIO(sockjsUrl.join("/"), options);
+    self.socket = io(sockjsUrl.join("/"), options);
     self.socket.on("connect", function (data) {
       self._connected();
     });
