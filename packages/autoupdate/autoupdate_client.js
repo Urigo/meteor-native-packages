@@ -74,6 +74,25 @@ Autoupdate._retrySubscription = function () {
         // updating the server.
         Autoupdate._retrySubscription();
       });
+    },
+
+    onReady: function () {
+      if (Package.reload) {
+        var checkNewVersionDocument = function (doc) {
+          if (doc._id === 'version' && doc.version !== autoupdateVersion) {
+            handle && handle.stop();
+
+            if (Package.reload) {
+              Package.reload.Reload._reload();
+            }
+          }
+        };
+
+        var handle = ClientVersions.find().observe({
+          added: checkNewVersionDocument,
+          changed: checkNewVersionDocument
+        });
+      }
     }
   });
 };
